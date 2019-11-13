@@ -30,7 +30,7 @@ tput cnorm
 fun_botOnOff () {
       [[ $(ps x | grep "bot_plus"|grep -v grep | wc -l) = '0' ]] && {
           clear
-          echo -e "\E[44;1;37m             INSTALADOR BOT SSHPLUS                \E[0m\n"
+          echo -e "\E[44;1;37m             INSTALADOR BOT SSHPLUS @yFork                \E[0m\n"
           echo -ne "\033[1;32mINFORME SEU TOKEN:\033[1;37m "; read tokenbot
   	    echo ""
   	    echo -ne "\033[1;32mINFORME SEU ID:\033[1;37m "; read iduser
