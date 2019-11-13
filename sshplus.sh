@@ -93,7 +93,7 @@ then
 	echo -e "de Conexões simutaneas dos usuários ? Ou Deseja"
     echo -e "criar uma nova base de dados ?\033[0m"
 	echo -e "\n\033[1;37m[\033[1;31m1\033[1;37m] \033[1;33mManter Base de Dados Atual\033[0m"
-	echo -e "\033[1;37m[\033[1;31m2\033[1;37m] \033[1;33mCriar uma Nova Base de Dados\033[0m"
+	echo -e "\033[1;37m[\033[1;31m2\033[1;37m] \033[1;33mCriar uma Nova Base de Dadooooos\033[0m"
 	echo -e "\n\033[0;34m═════════════════════════════════════════════════\033[0m"
     echo ""
     tput setaf 2 ; tput bold ; read -p "Opção ?: " -e -i 1 optiondb ; tput sgr0
