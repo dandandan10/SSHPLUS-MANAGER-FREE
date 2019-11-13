@@ -66,7 +66,7 @@ ajuda ()
         return 0
     else
         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
-        --text "$(echo -e 🚫 ACESSO NEGADO, ENTRE EM CONTATO COM @yFork 🚫)"
+        --text "$(echo -e 🚫 ACESSO NEGADO 🚫)"
         return 0
     fi
 }
@@ -76,7 +76,7 @@ ajuda ()
 fun_revenda() {
     [[ "${message_from_id[$id]}" != "$id_admin" ]] && {
         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
-        --text "$(echo -e 🚫 ACESSO NEGADO, ENTRE EM CONTATO COM @yFork 🚫)"
+        --text "$(echo -e 🚫 ACESSO NEGADO 🚫)"
         return 0
     }
     local env_msg1
@@ -164,7 +164,6 @@ msg_bem_vindo()
 {
     local msg
     msg="✌️😃 Ola <b>${message_from_first_name[$id]}</b>\nSeja bem-vindo(a)\n\n"
-	msg+="Para ter acesso ao bot\nContato: @yFork\nR$20.00 [20 logins]\n\n"
     msg+="Para obter informacoes\nclick ou execute [ /menu ]\n\n"
     ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
         --text "$(echo -e $msg)" \
@@ -593,7 +592,8 @@ sobremim() {
         msg="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
         msg+="<b>🤖 BOT SSHPLUS MANAGER 🤖</b>\n"
         msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n"
-        msg+="<b>Desenvolvido por:</b> @twossh\n"
+        msg+="<b>Desenvolvido por:</b> @crazy_vpn\n"
+        msg+="<b>Canal Oficial:</b> @SSHPLUS\n\n"
         msg+="Fui criado com o propósito de fornecer informações e ferramentas para gestao de vps 🐧 GNU/Linux 🐧 com foco em uso VPN\n\n"
         msg+="<b>Menu:</b> /menu\n"
         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
