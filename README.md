@@ -11,7 +11,7 @@
 
 ## Installation
 
-apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/dandandan10/SSHPLUS-MANAGER-FREE/master/sshplus.sh; chmod +x sshplus.sh; ./sshplus.sh
+apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/dandandan10/meusscript/master/sshplus.sh; chmod +x sshplus.sh; ./sshplus.sh
 
 ================================================================================
 
