@@ -15,7 +15,7 @@ ajuda ()
     if [[ "${message_from_id[$id]}" = "$id_admin" ]]; then
         local env_msg
         env_msg="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
-        env_msg+="<b>BEM VINDO(a) AO BOT SSHPLUS</b>\n"
+        env_msg+="<b>BEM VINDO(a) AO BOT @yFork</b>\n"
         env_msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n"
         env_msg+="⚠️ <i>Comandos Disponiveis</i>\n\n"
         env_msg+="[<b>01</b>] /criarusuario = Cria usuario\n"
@@ -42,7 +42,7 @@ ajuda ()
     elif [[ -d /etc/bot/revenda/${message_from_username} ]]; then
         local env_msg1
         env_msg1="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
-        env_msg1+="<b>BEM VINDO(a) AO BOT SSHPLUS</b>\n"
+        env_msg1+="<b>BEM VINDO(a) AO BOT @yFork</b>\n"
         env_msg1+="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n"
         env_msg1+="⚠️ <i>Comandos Disponiveis</i>\n\n"
         env_msg1+="[<b>01</b>] /criarusuario = Cria usuario\n"
@@ -66,7 +66,7 @@ ajuda ()
         return 0
     else
         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
-        --text "$(echo -e 🚫 ACESSO NEGADO 🚫)"
+        --text "$(echo -e 🚫 ACESSO NEGADO, ENTRE EM CONTATO COM @yFork 🚫)"
         return 0
     fi
 }
@@ -76,12 +76,12 @@ ajuda ()
 fun_revenda() {
     [[ "${message_from_id[$id]}" != "$id_admin" ]] && {
         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
-        --text "$(echo -e 🚫 ACESSO NEGADO 🚫)"
+        --text "$(echo -e 🚫 ACESSO NEGADO, ENTRE EM CONTATO COM @yFork 🚫)"
         return 0
     }
     local env_msg1
     env_msg1="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
-    env_msg1+="<b>MENU REVENDA BOT SSHPLUS</b>\n"
+    env_msg1+="<b>MENU REVENDA BOT @yFork</b>\n"
     env_msg1+="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n"
     env_msg1+="⚠️ <i>Comandos Disponiveis</i>\n\n"
     env_msg1+="[<b>01</b>] /add_revenda = Cria\n"
@@ -164,6 +164,7 @@ msg_bem_vindo()
 {
     local msg
     msg="✌️😃 Ola <b>${message_from_first_name[$id]}</b>\nSeja bem-vindo(a)\n\n"
+	msg+="Para ter acesso ao bot\nContato: @yFork\nR$20.00 [20 logins]\n\n"
     msg+="Para obter informacoes\nclick ou execute [ /menu ]\n\n"
     ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
         --text "$(echo -e $msg)" \
